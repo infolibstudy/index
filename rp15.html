@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  </head>
+  <body>
+    <title>Мои задания</title>
+    <style>
+    * {
+	margin: 20;
+	padding: 20;
+	box-sizing: border-box;
+	list-style: none;
+	text-decoration: none;
+}
+.title h1{
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 40px;
+	color: #fcfffc;
+	margin-bottom: 50px;
+}
+
+:root {
+	--index: calc(1vw + 1vh);
+	--color-header: #FF69B4;
+	--color-text: #cdc6c3;
+	--gallery-gap: calc(var(--index) * 7.5)
+}
+@font-face {
+	font-family: raleway-c;
+	src: url(../fonts/raleway-regular.woff2);
+}
+@font-face {
+	font-family: outfit-c;
+	src: url(../fonts/outfit-regular.woff2);
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: outfit-c;
+}
+/* will-change */
+.content, .hero, .main-header, .gallery > * {
+	will-change: transform;
+}
+body {
+	background-image: url(../img/bg1.png);
+	background-size:2000px;
+	color: #FF69B4;
+	font-family: raleway-c;
+	overflow-x: hidden;
+    }
+.list_menu a{
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 25px;
+	color: #fcfffc;
+	border-left: 2px solid #F5B7C7;
+	transition: 0.2s ease;
+	padding-left: 5px;
+}
+.list_menu a:hover{
+	border-left: 2px solid #F5B7C7;
+	transition: 0.2s ease;
+	padding-left: 10px;
+}
+.list_menu li{
+	margin: 20px 0;
+}
+.list_menu{
+	margin-bottom: 50px;
+}
+.menu{
+	padding: 25vh 50px;
+	background: rgba(20, 20, 20, 0.5);
+	height: 100vh;
+	border-right: 7px solid #fcfffc;
+	position: fixed;
+	left: -346px;
+	transition: 0.4s ease;
+}
+.menu:hover{
+	left: 0;
+	transition: 0.5s ease;
+}
+.content{
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+}
+.footer_menu p{
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 15px;
+	color: #fcfffc;
+	opacity: 0.7;
+}
+
+.box {
+  background: #ccc;
+}
+
+.toggler {
+  width: 100px;
+  height: 20px;
+  background: red;
+}
+.clearleft {clear:left;}
+h1 {text-align: center;
+  }
+.naz {text-align: right;
+  }
+.custom-btn {
+  width: 130px;
+  height: 40px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  outline: none;
+}
+.btn-8 {
+  background-color: #f0ecfc;
+background-image: linear-gradient(315deg, #f0ecfc 0%, #c797eb 74%);
+  line-height: 42px;
+  padding: 0;
+  border: none;
+}
+.btn-8 span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.btn-8:before,
+.btn-8:after {
+  position: absolute;
+  content: "";
+  right: 0;
+  bottom: 0;
+  background: #c797eb;
+  /*box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
+              -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+    inset -4px -4px 6px 0 rgba(255,255,255,.5),
+    inset 4px 4px 6px 0 rgba(116, 125, 136, .3);*/
+  transition: all 0.3s ease;
+}
+.btn-8:before{
+   height: 0%;
+   width: 2px;
+}
+.btn-8:after {
+  width: 0%;
+  height: 2px;
+}
+.btn-8:hover:before {
+  height: 100%;
+}
+.btn-8:hover:after {
+  width: 100%;
+}
+.btn-8:hover{
+  background: transparent;
+}
+.btn-8 span:hover{
+  color: #c797eb;
+}
+.btn-8 span:before,
+.btn-8 span:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  background: #c797eb;
+  /*box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
+              -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+    inset -4px -4px 6px 0 rgba(255,255,255,.5),
+    inset 4px 4px 6px 0 rgba(116, 125, 136, .3);*/
+  transition: all 0.3s ease;
+}
+.btn-8 span:before {
+  width: 2px;
+  height: 0%;
+}
+.btn-8 span:after {
+  height: 2px;
+  width: 0%;
+}
+.btn-8 span:hover:before {
+  height: 100%;
+}
+.btn-8 span:hover:after {
+  width: 100%;
+}
+.p{
+  margin-left:20px}
+      .glow-on-hover {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #ffc0cb;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+  </style>
+    <div class="menu">
+      <div class="title">
+        <h1>НАВИГАЦИЯ</h1>
+      </div>
+      <div class="list_menu">
+        <ul>
+          <li><a href="p3.html">Задание 2</a></li>
+          <li><a href="p4.html">Задание 3</a></li>
+          <li><a href="p5.html">Задание 4</a></li>
+          <li><a href="p6.html">Задание 5</a></li>
+        </ul>
+      </div>
+      <div class="footer_menu">
+        <p>©Алина</p>
+      </div>
+    </div>
+    <h1 align="center">Решение</h1>
+    <p style="text-align: center;">1) 16 делим на 8, чобы перевести из бит в
+      байты, получаем 2 байта<br>
+      2) находим сколько байт выделено на пробел и запятую:<br>
+      2*2=4<br>
+      3)12-4=8 байт выделено на одно слово<br>
+      4) 8:2=4 символа в слове Ответ:Личи </p>
+    <div style="text-align: right;"> <button class="glow-on-hover" onclick="window.location.href='p2.html'">Назад</button>
+    </div>
+  </body>
+</html>
